@@ -14,7 +14,7 @@
     "styled-components": "^6.1.0",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://msznogueira.github.io/",
+  "homepage": "https://msznogueira.github.io/WildCardRecMoviesFrontEnd/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
