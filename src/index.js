@@ -31,7 +31,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/movies/:moviename" element={<Movie />} />
+        <Route path="/movie/:movieid" element={<Movie />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

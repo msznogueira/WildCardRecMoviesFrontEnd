@@ -4,6 +4,7 @@ import Input from "../Input"
 import MovieCard from "../MovieCard"
 import { getSuggestions } from "../../services/movies"
 import debounce from 'lodash.debounce';
+import StyledLink from "../StyledLink"
 
 const SearchBarContainer = styled.section`
     background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
@@ -62,11 +63,13 @@ function SearchBar() {
             />
             <SearchBarResults>
                 {suggestions.map( movie => (
+                    <StyledLink to={`/movie/${movie.id}`}>
                     <MovieCard
                         key={movie.id}
                         title={movie.title}
                         description={movie.description}
                     />            
+                    </StyledLink>
                 ))}
             </SearchBarResults>
         </SearchBarContainer>
