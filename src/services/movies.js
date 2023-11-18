@@ -40,5 +40,6 @@ async function getMovieCredits(movieId) {
 export {
     getMovies,
     getSuggestions,
-    getMovieDetails
+    getMovieDetails,
+    getMovieCredits
 }
